@@ -1,0 +1,1596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safer Food Better Business for Caterers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Navigation Header -->
+        <nav class="nav-header">
+            <div class="nav-brand">
+                <h1>SFBB for Caterers</h1>
+            </div>
+            <div class="nav-menu">
+                <button class="nav-item active" data-section="introduction">Introduction</button>
+                <button class="nav-item" data-section="cross-contamination">Cross-contamination</button>
+                <button class="nav-item" data-section="cleaning">Cleaning</button>
+                <button class="nav-item" data-section="chilling">Chilling</button>
+                <button class="nav-item" data-section="cooking">Cooking</button>
+                <button class="nav-item" data-section="management">Management</button>
+                <button class="nav-item" data-section="diary">Diary</button>
+            </div>
+            <div class="nav-actions">
+                <button class="btn btn--sm btn--outline" id="printBtn">Print</button>
+                <button class="btn btn--sm btn--primary" id="saveBtn">Save Progress</button>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Introduction Section -->
+            <section id="introduction" class="content-section active">
+                <div class="section-header">
+                    <h2>Introduction</h2>
+                    <p>Welcome to your Safer Food Better Business pack for caterers</p>
+                </div>
+                
+                <div class="intro-content">
+                    <div class="business-info card">
+                        <div class="card__body">
+                            <h3>Business Information</h3>
+                            <form id="businessInfoForm">
+                                <div class="form-group">
+                                    <label class="form-label">Business Name</label>
+                                    <input type="text" class="form-control" id="businessName" name="businessName">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Owner/Manager Name</label>
+                                    <input type="text" class="form-control" id="ownerName" name="ownerName">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Completion Date</label>
+                                    <input type="date" class="form-control" id="completionDate" name="completionDate">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Business Address</label>
+                                    <textarea class="form-control" id="businessAddress" name="businessAddress" rows="3"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <div class="intro-cards">
+                        <div class="intro-card card">
+                            <div class="card__body">
+                                <h4>How to use this pack</h4>
+                                <p>This pack helps you identify what you need to do to keep food safe and shows you how to do it. Follow the safe methods and keep records to prove you're managing food safety properly.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="intro-card card">
+                            <div class="card__body">
+                                <h4>Food Hygiene Ratings</h4>
+                                <p>Your food hygiene rating reflects how well you're meeting food hygiene law requirements. Complete this pack to help achieve a high rating.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Cross-contamination Section -->
+            <section id="cross-contamination" class="content-section">
+                <div class="section-header">
+                    <h2>Cross-contamination</h2>
+                    <p>Prevent harmful bacteria from spreading</p>
+                </div>
+                
+                <div class="methods-tabs">
+                    <button class="tab-btn active" data-tab="personal-hygiene">Personal hygiene</button>
+                    <button class="tab-btn" data-tab="cloths">Cloths</button>
+                    <button class="tab-btn" data-tab="separating-foods">Separating foods</button>
+                    <button class="tab-btn" data-tab="food-allergies">Food allergies</button>
+                    <button class="tab-btn" data-tab="physical-contamination">Physical/Chemical</button>
+                    <button class="tab-btn" data-tab="pest-control">Pest control</button>
+                    <button class="tab-btn" data-tab="maintenance">Maintenance</button>
+                </div>
+                
+                <div class="tab-content">
+                    <div id="personal-hygiene" class="tab-panel active">
+                        <div class="method-form card">
+                            <div class="card__body">
+                                <h3>Personal hygiene and fitness to work</h3>
+                                <p class="method-description">It is essential for staff to follow good personal hygiene practices to help prevent foodborne illnesses.</p>
+                                
+                                <div class="safety-checklist">
+                                    <h4>Safety Points Checklist</h4>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="hands_washed" name="personal_hygiene">
+                                        <label for="hands_washed">Staff always wash their hands thoroughly with warm water before handling and preparing food</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="clean_clothes" name="personal_hygiene">
+                                        <label for="clean_clothes">Staff wear clean work clothes</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="hair_covered" name="personal_hygiene">
+                                        <label for="hair_covered">Hair is tied back and covered when necessary</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="wounds_covered" name="personal_hygiene">
+                                        <label for="wounds_covered">All wounds are covered with waterproof dressings</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="jewelry_removed" name="personal_hygiene">
+                                        <label for="jewelry_removed">Jewelry is removed (except plain wedding ring)</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label">Manager/Supervisor Signature Name</label>
+                                    <input type="text" class="form-control" name="personal_hygiene_signature" placeholder="Enter your name here">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Date</label>
+                                    <input type="date" class="form-control" name="personal_hygiene_date">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="cloths" class="tab-panel">
+                        <div class="method-form card">
+                            <div class="card__body">
+                                <h3>Cloths safe method</h3>
+                                <p class="method-description">Using cloths properly helps prevent cross-contamination between different areas and food types.</p>
+                                
+                                <div class="safety-checklist">
+                                    <h4>Safety Points Checklist</h4>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="different_cloths" name="cloths">
+                                        <label for="different_cloths">Use different cloths for different purposes</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="cloths_clean" name="cloths">
+                                        <label for="cloths_clean">Keep cloths as clean as possible during use</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="cloths_replaced" name="cloths">
+                                        <label for="cloths_replaced">Replace cloths regularly</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="cloths_washed" name="cloths">
+                                        <label for="cloths_washed">Wash cloths in hot soapy water</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label">Manager/Supervisor Signature Name</label>
+                                    <input type="text" class="form-control" name="cloths_signature" placeholder="Enter your name here">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Date</label>
+                                    <input type="date" class="form-control" name="cloths_date">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="separating-foods" class="tab-panel">
+                        <div class="method-form card">
+                            <div class="card__body">
+                                <h3>Separating foods</h3>
+                                <p class="method-description">Keep different types of food separated to prevent cross-contamination.</p>
+                                
+                                <div class="safety-checklist">
+                                    <h4>Safety Points Checklist</h4>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="raw_cooked_separate" name="separating">
+                                        <label for="raw_cooked_separate">Store raw and ready-to-eat foods separately</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="different_boards" name="separating">
+                                        <label for="different_boards">Use different chopping boards for raw and ready-to-eat foods</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="clean_between" name="separating">
+                                        <label for="clean_between">Clean and disinfect between preparing different foods</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label">Manager/Supervisor Signature Name</label>
+                                    <input type="text" class="form-control" name="separating_signature" placeholder="Enter your name here">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Date</label>
+                                    <input type="date" class="form-control" name="separating_date">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="food-allergies" class="tab-panel">
+                        <div class="method-form card">
+                            <div class="card__body">
+                                <h3>Food hypersensitivity (allergies and intolerances)</h3>
+                                <p class="method-description">Manage allergens effectively to protect customers with food allergies.</p>
+                                
+                                <div class="safety-checklist">
+                                    <h4>Allergen Management Checklist</h4>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="allergen_info" name="allergies">
+                                        <label for="allergen_info">Provide allergen information to customers</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="staff_trained_allergens" name="allergies">
+                                        <label for="staff_trained_allergens">Staff are trained about allergens</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="prevent_cross_contamination" name="allergies">
+                                        <label for="prevent_cross_contamination">Prevent cross-contamination of allergens</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label">Common Allergens Present (check all that apply)</label>
+                                    <div class="allergen-grid">
+                                        <label><input type="checkbox" name="allergens" value="nuts"> Nuts</label>
+                                        <label><input type="checkbox" name="allergens" value="peanuts"> Peanuts</label>
+                                        <label><input type="checkbox" name="allergens" value="eggs"> Eggs</label>
+                                        <label><input type="checkbox" name="allergens" value="milk"> Milk</label>
+                                        <label><input type="checkbox" name="allergens" value="fish"> Fish</label>
+                                        <label><input type="checkbox" name="allergens" value="shellfish"> Shellfish</label>
+                                        <label><input type="checkbox" name="allergens" value="gluten"> Gluten</label>
+                                        <label><input type="checkbox" name="allergens" value="soya"> Soya</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label">Manager/Supervisor Signature Name</label>
+                                    <input type="text" class="form-control" name="allergies_signature" placeholder="Enter your name here">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Date</label>
+                                    <input type="date" class="form-control" name="allergies_date">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="physical-contamination" class="tab-panel">
+                        <div class="method-form card">
+                            <div class="card__body">
+                                <h3>Physical and chemical contamination</h3>
+                                <p class="method-description">Prevent physical objects and chemicals from contaminating food.</p>
+                                
+                                <div class="safety-checklist">
+                                    <h4>Prevention Checklist</h4>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="chemicals_separate" name="physical">
+                                        <label for="chemicals_separate">Store cleaning chemicals away from food</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="no_foreign_objects" name="physical">
+                                        <label for="no_foreign_objects">Keep foreign objects away from food</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="equipment_maintained" name="physical">
+                                        <label for="equipment_maintained">Equipment is well maintained</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label">Manager/Supervisor Signature Name</label>
+                                    <input type="text" class="form-control" name="physical_signature" placeholder="Enter your name here">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Date</label>
+                                    <input type="date" class="form-control" name="physical_date">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="pest-control" class="tab-panel">
+                        <div class="method-form card">
+                            <div class="card__body">
+                                <h3>Pest control</h3>
+                                <p class="method-description">Prevent and control pests in your food business.</p>
+                                
+                                <div class="safety-checklist">
+                                    <h4>Pest Control Checklist</h4>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="doors_closed" name="pests">
+                                        <label for="doors_closed">Keep doors closed when possible</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="food_covered" name="pests">
+                                        <label for="food_covered">Keep food covered and stored properly</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="waste_removed" name="pests">
+                                        <label for="waste_removed">Remove waste regularly</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="clean_premises" name="pests">
+                                        <label for="clean_premises">Keep premises clean</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label">Manager/Supervisor Signature Name</label>
+                                    <input type="text" class="form-control" name="pests_signature" placeholder="Enter your name here">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Date</label>
+                                    <input type="date" class="form-control" name="pests_date">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="maintenance" class="tab-panel">
+                        <div class="method-form card">
+                            <div class="card__body">
+                                <h3>Maintenance</h3>
+                                <p class="method-description">Keep your premises and equipment in good repair.</p>
+                                
+                                <div class="safety-checklist">
+                                    <h4>Maintenance Checklist</h4>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="equipment_working" name="maintenance">
+                                        <label for="equipment_working">All equipment is working properly</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="surfaces_intact" name="maintenance">
+                                        <label for="surfaces_intact">Food contact surfaces are in good repair</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="water_supply" name="maintenance">
+                                        <label for="water_supply">Water supply is adequate</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="drainage_working" name="maintenance">
+                                        <label for="drainage_working">Drainage is working properly</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label">Manager/Supervisor Signature Name</label>
+                                    <input type="text" class="form-control" name="maintenance_signature" placeholder="Enter your name here">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Date</label>
+                                    <input type="date" class="form-control" name="maintenance_date">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Cleaning Section -->
+            <section id="cleaning" class="content-section">
+                <div class="section-header">
+                    <h2>Cleaning</h2>
+                    <p>Effective cleaning and sanitizing procedures</p>
+                </div>
+                
+                <div class="methods-tabs">
+                    <button class="tab-btn active" data-tab="handwashing">Handwashing</button>
+                    <button class="tab-btn" data-tab="cleaning-effectively">Cleaning effectively</button>
+                    <button class="tab-btn" data-tab="clear-clean">Clear and clean</button>
+                    <button class="tab-btn" data-tab="cleaning-schedule">Cleaning schedule</button>
+                </div>
+                
+                <div class="tab-content">
+                    <div id="handwashing" class="tab-panel active">
+                        <div class="method-form card">
+                            <div class="card__body">
+                                <h3>Handwashing</h3>
+                                <p class="method-description">Proper handwashing is essential for food safety.</p>
+                                
+                                <div class="handwashing-steps">
+                                    <h4>Handwashing Steps</h4>
+                                    <ol>
+                                        <li>Wet hands with warm running water</li>
+                                        <li>Apply soap and rub hands together for at least 20 seconds</li>
+                                        <li>Clean under fingernails and between fingers</li>
+                                        <li>Rinse thoroughly with clean water</li>
+                                        <li>Dry with clean towel or air dryer</li>
+                                    </ol>
+                                </div>
+                                
+                                <div class="safety-checklist">
+                                    <h4>Handwashing Facilities Checklist</h4>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="warm_water_available" name="handwashing">
+                                        <label for="warm_water_available">Warm running water is available</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="soap_available" name="handwashing">
+                                        <label for="soap_available">Soap is always available</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="drying_facilities" name="handwashing">
+                                        <label for="drying_facilities">Clean drying facilities are provided</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="handwash_sinks" name="handwashing">
+                                        <label for="handwash_sinks">Handwash basins are for handwashing only</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label">Manager/Supervisor Signature Name</label>
+                                    <input type="text" class="form-control" name="handwashing_signature" placeholder="Enter your name here">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Date</label>
+                                    <input type="date" class="form-control" name="handwashing_date">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="cleaning-effectively" class="tab-panel">
+                        <div class="method-form card">
+                            <div class="card__body">
+                                <h3>Cleaning effectively</h3>
+                                <p class="method-description">Follow the correct cleaning procedure to ensure surfaces are clean and safe.</p>
+                                
+                                <div class="cleaning-steps">
+                                    <h4>Cleaning Steps</h4>
+                                    <ol>
+                                        <li>Pre-clean - remove food debris</li>
+                                        <li>Main clean - wash with hot soapy water</li>
+                                        <li>Rinse - with clean hot water</li>
+                                        <li>Disinfect - use approved disinfectant</li>
+                                        <li>Final rinse - if required</li>
+                                        <li>Dry - air dry or use clean cloth</li>
+                                    </ol>
+                                </div>
+                                
+                                <div class="safety-checklist">
+                                    <h4>Cleaning Effectiveness Checklist</h4>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="cleaning_products" name="cleaning_effectively">
+                                        <label for="cleaning_products">Appropriate cleaning products are used</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="hot_water" name="cleaning_effectively">
+                                        <label for="hot_water">Hot water is available for cleaning</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="clean_equipment" name="cleaning_effectively">
+                                        <label for="clean_equipment">Cleaning equipment is kept clean</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label">Manager/Supervisor Signature Name</label>
+                                    <input type="text" class="form-control" name="cleaning_effectively_signature" placeholder="Enter your name here">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Date</label>
+                                    <input type="date" class="form-control" name="cleaning_effectively_date">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="clear-clean" class="tab-panel">
+                        <div class="method-form card">
+                            <div class="card__body">
+                                <h3>Clear and clean as you go</h3>
+                                <p class="method-description">Keep work surfaces clear and clean during food preparation.</p>
+                                
+                                <div class="safety-checklist">
+                                    <h4>Clear and Clean Checklist</h4>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="clear_as_go" name="clear_clean">
+                                        <label for="clear_as_go">Clear work surfaces as you go</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="clean_spills" name="clear_clean">
+                                        <label for="clean_spills">Clean spills immediately</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="sanitizer_available" name="clear_clean">
+                                        <label for="sanitizer_available">Sanitizer is readily available</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="clean_between_tasks" name="clear_clean">
+                                        <label for="clean_between_tasks">Clean and sanitize between different food preparation tasks</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label">Manager/Supervisor Signature Name</label>
+                                    <input type="text" class="form-control" name="clear_clean_signature" placeholder="Enter your name here">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Date</label>
+                                    <input type="date" class="form-control" name="clear_clean_date">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="cleaning-schedule" class="tab-panel">
+                        <div class="method-form card">
+                            <div class="card__body">
+                                <h3>Your cleaning schedule</h3>
+                                <p class="method-description">Create and maintain a regular cleaning schedule.</p>
+                                
+                                <div class="cleaning-schedule-table">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>What to clean</th>
+                                                <th>How often</th>
+                                                <th>Method</th>
+                                                <th>Who</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Work surfaces</td>
+                                                <td>After each use</td>
+                                                <td><input type="text" class="form-control" name="work_surfaces_method"></td>
+                                                <td><input type="text" class="form-control" name="work_surfaces_who"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Equipment</td>
+                                                <td>After each use</td>
+                                                <td><input type="text" class="form-control" name="equipment_method"></td>
+                                                <td><input type="text" class="form-control" name="equipment_who"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Floors</td>
+                                                <td>Daily</td>
+                                                <td><input type="text" class="form-control" name="floors_method"></td>
+                                                <td><input type="text" class="form-control" name="floors_who"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Refrigerators</td>
+                                                <td>Weekly</td>
+                                                <td><input type="text" class="form-control" name="fridge_method"></td>
+                                                <td><input type="text" class="form-control" name="fridge_who"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label">Manager/Supervisor Signature Name</label>
+                                    <input type="text" class="form-control" name="cleaning_schedule_signature" placeholder="Enter your name here">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Date</label>
+                                    <input type="date" class="form-control" name="cleaning_schedule_date">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Chilling Section -->
+            <section id="chilling" class="content-section">
+                <div class="section-header">
+                    <h2>Chilling</h2>
+                    <p>Keep food at safe temperatures</p>
+                </div>
+                
+                <div class="methods-tabs">
+                    <button class="tab-btn active" data-tab="chilled-storage">Chilled storage</button>
+                    <button class="tab-btn" data-tab="chilling-down">Chilling down</button>
+                    <button class="tab-btn" data-tab="defrosting">Defrosting</button>
+                    <button class="tab-btn" data-tab="freezing">Freezing</button>
+                </div>
+                
+                <div class="tab-content">
+                    <div id="chilled-storage" class="tab-panel active">
+                        <div class="method-form card">
+                            <div class="card__body">
+                                <h3>Chilled storage and displaying chilled food</h3>
+                                <p class="method-description">Keep chilled food at 8°C or below to prevent harmful bacteria from multiplying.</p>
+                                
+                                <div class="safety-checklist">
+                                    <h4>Chilled Storage Checklist</h4>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="temp_8_or_below" name="chilled_storage">
+                                        <label for="temp_8_or_below">Refrigerated food is kept at 8°C or below</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="temp_checked" name="chilled_storage">
+                                        <label for="temp_checked">Temperature is checked regularly</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="raw_cooked_separated" name="chilled_storage">
+                                        <label for="raw_cooked_separated">Raw and cooked foods are stored separately</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="food_covered" name="chilled_storage">
+                                        <label for="food_covered">Food is covered or wrapped</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label">Manager/Supervisor Signature Name</label>
+                                    <input type="text" class="form-control" name="chilled_storage_signature" placeholder="Enter your name here">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Date</label>
+                                    <input type="date" class="form-control" name="chilled_storage_date">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="chilling-down" class="tab-panel">
+                        <div class="method-form card">
+                            <div class="card__body">
+                                <h3>Chilling down hot food</h3>
+                                <p class="method-description">Cool hot food quickly to prevent harmful bacteria from multiplying.</p>
+                                
+                                <div class="cooling-options">
+                                    <h4>Cooling Methods</h4>
+                                    <div class="check-item">
+                                        <input type="radio" id="blast_chiller" name="cooling_method" value="blast_chiller">
+                                        <label for="blast_chiller">Use a blast chiller</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="radio" id="ice_bath" name="cooling_method" value="ice_bath">
+                                        <label for="ice_bath">Use an ice bath</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="radio" id="shallow_containers" name="cooling_method" value="shallow_containers">
+                                        <label for="shallow_containers">Use shallow containers</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="radio" id="room_temp_then_fridge" name="cooling_method" value="room_temp_then_fridge">
+                                        <label for="room_temp_then_fridge">Cool at room temperature then refrigerate</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label">Manager/Supervisor Signature Name</label>
+                                    <input type="text" class="form-control" name="chilling_down_signature" placeholder="Enter your name here">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Date</label>
+                                    <input type="date" class="form-control" name="chilling_down_date">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="defrosting" class="tab-panel">
+                        <div class="method-form card">
+                            <div class="card__body">
+                                <h3>Defrosting</h3>
+                                <p class="method-description">Defrost food safely to prevent harmful bacteria from multiplying.</p>
+                                
+                                <div class="defrosting-methods">
+                                    <h4>Safe Defrosting Methods</h4>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="fridge_defrost" name="defrosting">
+                                        <label for="fridge_defrost">Defrost in the refrigerator</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="cold_water_defrost" name="defrosting">
+                                        <label for="cold_water_defrost">Defrost in cold water (change water regularly)</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="microwave_defrost" name="defrosting">
+                                        <label for="microwave_defrost">Use microwave defrost setting</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="cook_from_frozen" name="defrosting">
+                                        <label for="cook_from_frozen">Cook from frozen (where appropriate)</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label">Manager/Supervisor Signature Name</label>
+                                    <input type="text" class="form-control" name="defrosting_signature" placeholder="Enter your name here">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Date</label>
+                                    <input type="date" class="form-control" name="defrosting_date">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="freezing" class="tab-panel">
+                        <div class="method-form card">
+                            <div class="card__body">
+                                <h3>Freezing</h3>
+                                <p class="method-description">Store food safely in the freezer at -18°C or below.</p>
+                                
+                                <div class="safety-checklist">
+                                    <h4>Freezing Safety Checklist</h4>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="minus_18" name="freezing">
+                                        <label for="minus_18">Freezer temperature is -18°C or below</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="food_wrapped" name="freezing">
+                                        <label for="food_wrapped">Food is properly wrapped or containerized</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="labeled_dated" name="freezing">
+                                        <label for="labeled_dated">Food is labeled and dated</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="first_in_first_out" name="freezing">
+                                        <label for="first_in_first_out">Use oldest stock first</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label">Manager/Supervisor Signature Name</label>
+                                    <input type="text" class="form-control" name="freezing_signature" placeholder="Enter your name here">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Date</label>
+                                    <input type="date" class="form-control" name="freezing_date">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Cooking Section -->
+            <section id="cooking" class="content-section">
+                <div class="section-header">
+                    <h2>Cooking</h2>
+                    <p>Cook food safely to kill harmful bacteria</p>
+                </div>
+                
+                <div class="methods-tabs">
+                    <button class="tab-btn active" data-tab="cooking-safely">Cooking safely</button>
+                    <button class="tab-btn" data-tab="extra-care-foods">Foods needing extra care</button>
+                    <button class="tab-btn" data-tab="reheating">Reheating</button>
+                    <button class="tab-btn" data-tab="hot-holding">Hot holding</button>
+                    <button class="tab-btn" data-tab="ready-to-eat">Ready-to-eat</button>
+                </div>
+                
+                <div class="tab-content">
+                    <div id="cooking-safely" class="tab-panel active">
+                        <div class="method-form card">
+                            <div class="card__body">
+                                <h3>Cooking safely</h3>
+                                <p class="method-description">Cook food thoroughly to kill harmful bacteria and make food safe to eat.</p>
+                                
+                                <div class="temperature-guide">
+                                    <h4>Core Temperature Guide</h4>
+                                    <p>Food should reach these core temperatures:</p>
+                                    <ul>
+                                        <li><strong>75°C</strong> for 30 seconds, or</li>
+                                        <li><strong>70°C</strong> for 2 minutes, or</li>
+                                        <li><strong>65°C</strong> for 10 minutes, or</li>
+                                        <li><strong>60°C</strong> for 45 minutes</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="safety-checklist">
+                                    <h4>Cooking Safety Checklist</h4>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="probe_thermometer" name="cooking_safely">
+                                        <label for="probe_thermometer">Use a probe thermometer to check core temperature</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="cook_thoroughly" name="cooking_safely">
+                                        <label for="cook_thoroughly">Cook food thoroughly - no pink meat, clear juices</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="clean_probe" name="cooking_safely">
+                                        <label for="clean_probe">Clean and disinfect probe between uses</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label">Manager/Supervisor Signature Name</label>
+                                    <input type="text" class="form-control" name="cooking_safely_signature" placeholder="Enter your name here">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Date</label>
+                                    <input type="date" class="form-control" name="cooking_safely_date">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="extra-care-foods" class="tab-panel">
+                        <div class="method-form card">
+                            <div class="card__body">
+                                <h3>Foods that need extra care</h3>
+                                <p class="method-description">Some foods need extra care when cooking to ensure they are safe.</p>
+                                
+                                <div class="high-risk-foods">
+                                    <h4>High-Risk Foods</h4>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="poultry" name="extra_care">
+                                        <label for="poultry">Poultry (chicken, turkey, duck)</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="minced_meat" name="extra_care">
+                                        <label for="minced_meat">Minced meat and burgers</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="rolled_joints" name="extra_care">
+                                        <label for="rolled_joints">Rolled and stuffed joints</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="eggs" name="extra_care">
+                                        <label for="eggs">Eggs and egg dishes</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="rice" name="extra_care">
+                                        <label for="rice">Rice dishes</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label">Manager/Supervisor Signature Name</label>
+                                    <input type="text" class="form-control" name="extra_care_signature" placeholder="Enter your name here">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Date</label>
+                                    <input type="date" class="form-control" name="extra_care_date">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="reheating" class="tab-panel">
+                        <div class="method-form card">
+                            <div class="card__body">
+                                <h3>Reheating</h3>
+                                <p class="method-description">Reheat food safely to kill any bacteria that may have grown.</p>
+                                
+                                <div class="reheating-rules">
+                                    <h4>Reheating Rules</h4>
+                                    <ul>
+                                        <li>Only reheat food once</li>
+                                        <li>Reheat to at least 75°C throughout</li>
+                                        <li>Reheat food as quickly as possible</li>
+                                        <li>Check temperature with a probe thermometer</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="safety-checklist">
+                                    <h4>Reheating Safety Checklist</h4>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="reheat_75" name="reheating">
+                                        <label for="reheat_75">Reheat to 75°C or above throughout</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="reheat_once" name="reheating">
+                                        <label for="reheat_once">Only reheat food once</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="reheat_quickly" name="reheating">
+                                        <label for="reheat_quickly">Reheat food as quickly as possible</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label">Manager/Supervisor Signature Name</label>
+                                    <input type="text" class="form-control" name="reheating_signature" placeholder="Enter your name here">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Date</label>
+                                    <input type="date" class="form-control" name="reheating_date">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="hot-holding" class="tab-panel">
+                        <div class="method-form card">
+                            <div class="card__body">
+                                <h3>Hot holding</h3>
+                                <p class="method-description">Keep hot food hot to prevent harmful bacteria from multiplying.</p>
+                                
+                                <div class="hot-holding-rules">
+                                    <h4>Hot Holding Temperature</h4>
+                                    <p>Keep hot food at <strong>63°C or above</strong></p>
+                                </div>
+                                
+                                <div class="safety-checklist">
+                                    <h4>Hot Holding Safety Checklist</h4>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="hold_63" name="hot_holding">
+                                        <label for="hold_63">Keep hot food at 63°C or above</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="check_temp_regularly" name="hot_holding">
+                                        <label for="check_temp_regularly">Check temperature regularly</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="use_within_2_hours" name="hot_holding">
+                                        <label for="use_within_2_hours">Serve or dispose of food within 2 hours</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label">Manager/Supervisor Signature Name</label>
+                                    <input type="text" class="form-control" name="hot_holding_signature" placeholder="Enter your name here">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Date</label>
+                                    <input type="date" class="form-control" name="hot_holding_date">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="ready-to-eat" class="tab-panel">
+                        <div class="method-form card">
+                            <div class="card__body">
+                                <h3>Ready-to-eat food</h3>
+                                <p class="method-description">Handle ready-to-eat food safely to prevent contamination.</p>
+                                
+                                <div class="safety-checklist">
+                                    <h4>Ready-to-eat Safety Checklist</h4>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="wash_hands_rte" name="ready_to_eat">
+                                        <label for="wash_hands_rte">Wash hands before handling ready-to-eat food</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="use_tongs" name="ready_to_eat">
+                                        <label for="use_tongs">Use clean utensils or tongs</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="separate_rte" name="ready_to_eat">
+                                        <label for="separate_rte">Keep separate from raw food</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="cover_rte" name="ready_to_eat">
+                                        <label for="cover_rte">Keep covered when not being served</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label">Manager/Supervisor Signature Name</label>
+                                    <input type="text" class="form-control" name="ready_to_eat_signature" placeholder="Enter your name here">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Date</label>
+                                    <input type="date" class="form-control" name="ready_to_eat_date">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Management Section -->
+            <section id="management" class="content-section">
+                <div class="section-header">
+                    <h2>Management</h2>
+                    <p>Food safety management systems and procedures</p>
+                </div>
+                
+                <div class="methods-tabs">
+                    <button class="tab-btn active" data-tab="opening-closing">Opening & Closing</button>
+                    <button class="tab-btn" data-tab="extra-checks">Extra Checks</button>
+                    <button class="tab-btn" data-tab="prove-it">Prove It</button>
+                    <button class="tab-btn" data-tab="training">Training</button>
+                    <button class="tab-btn" data-tab="suppliers">Suppliers</button>
+                </div>
+                
+                <div class="tab-content">
+                    <div id="opening-closing" class="tab-panel active">
+                        <div class="method-form card">
+                            <div class="card__body">
+                                <h3>Opening and closing checks</h3>
+                                <p class="method-description">Daily checks to ensure your business operates safely.</p>
+                                
+                                <div class="daily-checks">
+                                    <div class="checks-section">
+                                        <h4>Opening Checks</h4>
+                                        <div class="check-item">
+                                            <input type="checkbox" id="fridges_working" name="opening_checks">
+                                            <label for="fridges_working">Fridges, chilled display equipment and freezers are working properly</label>
+                                        </div>
+                                        <div class="check-item">
+                                            <input type="checkbox" id="equipment_working" name="opening_checks">
+                                            <label for="equipment_working">Other equipment (e.g. oven) is working properly</label>
+                                        </div>
+                                        <div class="check-item">
+                                            <input type="checkbox" id="staff_fit" name="opening_checks">
+                                            <label for="staff_fit">Staff are fit for work and wearing clean work clothes</label>
+                                        </div>
+                                        <div class="check-item">
+                                            <input type="checkbox" id="prep_areas_clean" name="opening_checks">
+                                            <label for="prep_areas_clean">Food preparation areas are clean and disinfected</label>
+                                        </div>
+                                        <div class="check-item">
+                                            <input type="checkbox" id="no_pests" name="opening_checks">
+                                            <label for="no_pests">All areas are free from evidence of pest activity</label>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="checks-section">
+                                        <h4>Closing Checks</h4>
+                                        <div class="check-item">
+                                            <input type="checkbox" id="food_stored" name="closing_checks">
+                                            <label for="food_stored">All food is covered, labelled and put in the fridge/freezer</label>
+                                        </div>
+                                        <div class="check-item">
+                                            <input type="checkbox" id="expired_discarded" name="closing_checks">
+                                            <label for="expired_discarded">Food on its Use By date has been thrown away</label>
+                                        </div>
+                                        <div class="check-item">
+                                            <input type="checkbox" id="cleaning_equipment_clean" name="closing_checks">
+                                            <label for="cleaning_equipment_clean">Dirty cleaning equipment has been cleaned or thrown away</label>
+                                        </div>
+                                        <div class="check-item">
+                                            <input type="checkbox" id="waste_disposed" name="closing_checks">
+                                            <label for="waste_disposed">Waste has been removed and new bags put into the bins</label>
+                                        </div>
+                                        <div class="check-item">
+                                            <input type="checkbox" id="areas_cleaned" name="closing_checks">
+                                            <label for="areas_cleaned">Food preparation areas are clean and disinfected</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label">Manager/Supervisor Signature Name</label>
+                                    <input type="text" class="form-control" name="opening_closing_signature" placeholder="Enter your name here">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Date</label>
+                                    <input type="date" class="form-control" name="opening_closing_date">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="extra-checks" class="tab-panel">
+                        <div class="method-form card">
+                            <div class="card__body">
+                                <h3>Extra checks</h3>
+                                <p class="method-description">Additional checks to ensure food safety standards are maintained.</p>
+                                
+                                <div class="extra-checks-schedule">
+                                    <h4>Weekly Checks</h4>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="deep_clean" name="extra_checks">
+                                        <label for="deep_clean">Deep cleaning of equipment and areas</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="temperature_logs" name="extra_checks">
+                                        <label for="temperature_logs">Review temperature monitoring logs</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="stock_rotation" name="extra_checks">
+                                        <label for="stock_rotation">Check stock rotation and dates</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label">Manager/Supervisor Signature Name</label>
+                                    <input type="text" class="form-control" name="extra_checks_signature" placeholder="Enter your name here">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Date</label>
+                                    <input type="date" class="form-control" name="extra_checks_date">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="prove-it" class="tab-panel">
+                        <div class="method-form card">
+                            <div class="card__body">
+                                <h3>Prove it - Temperature monitoring</h3>
+                                <p class="method-description">Record temperatures to prove your food safety systems are working.</p>
+                                
+                                <div class="temperature-monitoring">
+                                    <h4>Temperature Recording</h4>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Equipment/Area</th>
+                                                <th>Target Temp</th>
+                                                <th>Frequency</th>
+                                                <th>Action if out of range</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Refrigerator</td>
+                                                <td>≤8°C</td>
+                                                <td>Daily</td>
+                                                <td><input type="text" class="form-control" name="fridge_action"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Freezer</td>
+                                                <td>≤-18°C</td>
+                                                <td>Daily</td>
+                                                <td><input type="text" class="form-control" name="freezer_action"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Hot holding</td>
+                                                <td>≥63°C</td>
+                                                <td>Every 2 hours</td>
+                                                <td><input type="text" class="form-control" name="hot_holding_action"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label">Manager/Supervisor Signature Name</label>
+                                    <input type="text" class="form-control" name="prove_it_signature" placeholder="Enter your name here">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Date</label>
+                                    <input type="date" class="form-control" name="prove_it_date">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="training" class="tab-panel">
+                        <div class="method-form card">
+                            <div class="card__body">
+                                <h3>Training and supervision</h3>
+                                <p class="method-description">Ensure all staff are properly trained in food safety.</p>
+                                
+                                <div class="training-checklist">
+                                    <h4>Training Requirements</h4>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="induction_training" name="training">
+                                        <label for="induction_training">All new staff receive food safety induction</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="ongoing_training" name="training">
+                                        <label for="ongoing_training">Regular refresher training is provided</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="supervision" name="training">
+                                        <label for="supervision">Staff are supervised during food handling</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="training_records" name="training">
+                                        <label for="training_records">Training records are kept up to date</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label">Manager/Supervisor Signature Name</label>
+                                    <input type="text" class="form-control" name="training_signature" placeholder="Enter your name here">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Date</label>
+                                    <input type="date" class="form-control" name="training_date">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="suppliers" class="tab-panel">
+                        <div class="method-form card">
+                            <div class="card__body">
+                                <h3>Suppliers and contractors</h3>
+                                <p class="method-description">Ensure your suppliers maintain food safety standards.</p>
+                                
+                                <div class="supplier-checklist">
+                                    <h4>Supplier Requirements</h4>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="reputable_suppliers" name="suppliers">
+                                        <label for="reputable_suppliers">Use reputable suppliers</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="check_deliveries" name="suppliers">
+                                        <label for="check_deliveries">Check deliveries on arrival</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="reject_unsuitable" name="suppliers">
+                                        <label for="reject_unsuitable">Reject unsuitable deliveries</label>
+                                    </div>
+                                    <div class="check-item">
+                                        <input type="checkbox" id="supplier_assurance" name="suppliers">
+                                        <label for="supplier_assurance">Obtain supplier assurance documents</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label">Manager/Supervisor Signature Name</label>
+                                    <input type="text" class="form-control" name="suppliers_signature" placeholder="Enter your name here">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Date</label>
+                                    <input type="date" class="form-control" name="suppliers_date">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Diary Section -->
+            <section id="diary" class="content-section">
+                <div class="section-header">
+                    <h2>Diary</h2>
+                    <p>Record keeping and documentation</p>
+                </div>
+                
+                <div class="methods-tabs">
+                    <button class="tab-btn active" data-tab="weekly-diary">Weekly Diary</button>
+                    <button class="tab-btn" data-tab="staff-training-record">Staff Training</button>
+                    <button class="tab-btn" data-tab="suppliers-list">Suppliers List</button>
+                    <button class="tab-btn" data-tab="cleaning-schedule-diary">Cleaning Schedule</button>
+                    <button class="tab-btn" data-tab="temperature-records">Temperature Records</button>
+                    <button class="tab-btn" data-tab="4-weekly-review">4-Weekly Review</button>
+                </div>
+                
+                <div class="tab-content">
+                    <div id="weekly-diary" class="tab-panel active">
+                        <div class="diary-form card">
+                            <div class="card__body">
+                                <h3>Weekly Diary Pages</h3>
+                                <p class="method-description">Record daily activities, problems, and actions taken.</p>
+                                
+                                <div class="form-group">
+                                    <label class="form-label">Week Commencing</label>
+                                    <input type="date" class="form-control" name="week_commencing">
+                                </div>
+                                
+                                <div class="daily-entries">
+                                    <div class="day-entry">
+                                        <h4>Monday</h4>
+                                        <textarea class="form-control" name="monday_entry" rows="3" placeholder="Record any incidents, problems, or actions taken..."></textarea>
+                                        <div class="form-group">
+                                            <label class="form-label">Staff Name on Duty</label>
+                                            <input type="text" class="form-control" name="monday_staff" placeholder="Enter staff name">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="day-entry">
+                                        <h4>Tuesday</h4>
+                                        <textarea class="form-control" name="tuesday_entry" rows="3" placeholder="Record any incidents, problems, or actions taken..."></textarea>
+                                        <div class="form-group">
+                                            <label class="form-label">Staff Name on Duty</label>
+                                            <input type="text" class="form-control" name="tuesday_staff" placeholder="Enter staff name">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="day-entry">
+                                        <h4>Wednesday</h4>
+                                        <textarea class="form-control" name="wednesday_entry" rows="3" placeholder="Record any incidents, problems, or actions taken..."></textarea>
+                                        <div class="form-group">
+                                            <label class="form-label">Staff Name on Duty</label>
+                                            <input type="text" class="form-control" name="wednesday_staff" placeholder="Enter staff name">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="day-entry">
+                                        <h4>Thursday</h4>
+                                        <textarea class="form-control" name="thursday_entry" rows="3" placeholder="Record any incidents, problems, or actions taken..."></textarea>
+                                        <div class="form-group">
+                                            <label class="form-label">Staff Name on Duty</label>
+                                            <input type="text" class="form-control" name="thursday_staff" placeholder="Enter staff name">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="day-entry">
+                                        <h4>Friday</h4>
+                                        <textarea class="form-control" name="friday_entry" rows="3" placeholder="Record any incidents, problems, or actions taken..."></textarea>
+                                        <div class="form-group">
+                                            <label class="form-label">Staff Name on Duty</label>
+                                            <input type="text" class="form-control" name="friday_staff" placeholder="Enter staff name">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="day-entry">
+                                        <h4>Saturday</h4>
+                                        <textarea class="form-control" name="saturday_entry" rows="3" placeholder="Record any incidents, problems, or actions taken..."></textarea>
+                                        <div class="form-group">
+                                            <label class="form-label">Staff Name on Duty</label>
+                                            <input type="text" class="form-control" name="saturday_staff" placeholder="Enter staff name">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="day-entry">
+                                        <h4>Sunday</h4>
+                                        <textarea class="form-control" name="sunday_entry" rows="3" placeholder="Record any incidents, problems, or actions taken..."></textarea>
+                                        <div class="form-group">
+                                            <label class="form-label">Staff Name on Duty</label>
+                                            <input type="text" class="form-control" name="sunday_staff" placeholder="Enter staff name">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label">Manager/Supervisor Signature Name</label>
+                                    <input type="text" class="form-control" name="weekly_diary_signature" placeholder="Enter your name here">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="staff-training-record" class="tab-panel">
+                        <div class="training-record-form card">
+                            <div class="card__body">
+                                <h3>Staff Training Record</h3>
+                                
+                                <div class="staff-training-entry">
+                                    <div class="form-group">
+                                        <label class="form-label">Staff Member Name</label>
+                                        <input type="text" class="form-control" name="staff_member_name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Position</label>
+                                        <input type="text" class="form-control" name="staff_position">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Training Date</label>
+                                        <input type="date" class="form-control" name="staff_training_date">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Training Topics Covered</label>
+                                        <textarea class="form-control" name="training_topics" rows="4" placeholder="List the training topics covered..."></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Trainer Name</label>
+                                        <input type="text" class="form-control" name="trainer_name" placeholder="Enter trainer's name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Staff Member Signature Name</label>
+                                        <input type="text" class="form-control" name="staff_signature_name" placeholder="Enter staff member's name">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="suppliers-list" class="tab-panel">
+                        <div class="suppliers-form card">
+                            <div class="card__body">
+                                <h3>Suppliers List</h3>
+                                
+                                <div class="supplier-entry">
+                                    <div class="form-group">
+                                        <label class="form-label">Supplier Name</label>
+                                        <input type="text" class="form-control" name="supplier_name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Contact Person</label>
+                                        <input type="text" class="form-control" name="supplier_contact">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Phone Number</label>
+                                        <input type="tel" class="form-control" name="supplier_phone">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Address</label>
+                                        <textarea class="form-control" name="supplier_address" rows="3"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Products Supplied</label>
+                                        <textarea class="form-control" name="products_supplied" rows="2"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Delivery Days</label>
+                                        <input type="text" class="form-control" name="delivery_days">
+                                    </div>
+                                </div>
+                                
+                                <button type="button" class="btn btn--secondary" id="addSupplierBtn">Add Another Supplier</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="cleaning-schedule-diary" class="tab-panel">
+                        <div class="cleaning-schedule-form card">
+                            <div class="card__body">
+                                <h3>Cleaning Schedule</h3>
+                                
+                                <table class="cleaning-table">
+                                    <thead>
+                                        <tr>
+                                            <th>What to clean</th>
+                                            <th>How often</th>
+                                            <th>Method</th>
+                                            <th>Who</th>
+                                            <th>When done</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Work surfaces</td>
+                                            <td>After each use</td>
+                                            <td><input type="text" class="form-control" name="work_surfaces_method"></td>
+                                            <td><input type="text" class="form-control" name="work_surfaces_who"></td>
+                                            <td><input type="text" class="form-control" name="work_surfaces_signature" placeholder="Staff name"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cooking equipment</td>
+                                            <td>After each use</td>
+                                            <td><input type="text" class="form-control" name="cooking_equipment_method"></td>
+                                            <td><input type="text" class="form-control" name="cooking_equipment_who"></td>
+                                            <td><input type="text" class="form-control" name="cooking_equipment_signature" placeholder="Staff name"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Floors</td>
+                                            <td>Daily</td>
+                                            <td><input type="text" class="form-control" name="floors_method"></td>
+                                            <td><input type="text" class="form-control" name="floors_who"></td>
+                                            <td><input type="text" class="form-control" name="floors_signature" placeholder="Staff name"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Refrigerators</td>
+                                            <td>Weekly</td>
+                                            <td><input type="text" class="form-control" name="refrigerators_method"></td>
+                                            <td><input type="text" class="form-control" name="refrigerators_who"></td>
+                                            <td><input type="text" class="form-control" name="refrigerators_signature" placeholder="Staff name"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Waste areas</td>
+                                            <td>Daily</td>
+                                            <td><input type="text" class="form-control" name="waste_areas_method"></td>
+                                            <td><input type="text" class="form-control" name="waste_areas_who"></td>
+                                            <td><input type="text" class="form-control" name="waste_areas_signature" placeholder="Staff name"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="temperature-records" class="tab-panel">
+                        <div class="temperature-records-form card">
+                            <div class="card__body">
+                                <h3>Prove It - Temperature Records</h3>
+                                
+                                <div class="temperature-log">
+                                    <div class="form-group">
+                                        <label class="form-label">Date</label>
+                                        <input type="date" class="form-control" name="temp_record_date">
+                                    </div>
+                                    
+                                    <table class="temperature-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Time</th>
+                                                <th>Fridge 1 (°C)</th>
+                                                <th>Fridge 2 (°C)</th>
+                                                <th>Freezer (°C)</th>
+                                                <th>Hot Holding (°C)</th>
+                                                <th>Staff Name</th>
+                                                <th>Action Taken</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Opening</td>
+                                                <td><input type="number" class="form-control" name="opening_fridge1" step="0.1"></td>
+                                                <td><input type="number" class="form-control" name="opening_fridge2" step="0.1"></td>
+                                                <td><input type="number" class="form-control" name="opening_freezer" step="0.1"></td>
+                                                <td><input type="number" class="form-control" name="opening_hot_holding" step="0.1"></td>
+                                                <td><input type="text" class="form-control" name="opening_staff" placeholder="Staff name"></td>
+                                                <td><input type="text" class="form-control" name="opening_action"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Midday</td>
+                                                <td><input type="number" class="form-control" name="midday_fridge1" step="0.1"></td>
+                                                <td><input type="number" class="form-control" name="midday_fridge2" step="0.1"></td>
+                                                <td><input type="number" class="form-control" name="midday_freezer" step="0.1"></td>
+                                                <td><input type="number" class="form-control" name="midday_hot_holding" step="0.1"></td>
+                                                <td><input type="text" class="form-control" name="midday_staff" placeholder="Staff name"></td>
+                                                <td><input type="text" class="form-control" name="midday_action"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Closing</td>
+                                                <td><input type="number" class="form-control" name="closing_fridge1" step="0.1"></td>
+                                                <td><input type="number" class="form-control" name="closing_fridge2" step="0.1"></td>
+                                                <td><input type="number" class="form-control" name="closing_freezer" step="0.1"></td>
+                                                <td><input type="number" class="form-control" name="closing_hot_holding" step="0.1"></td>
+                                                <td><input type="text" class="form-control" name="closing_staff" placeholder="Staff name"></td>
+                                                <td><input type="text" class="form-control" name="closing_action"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="4-weekly-review" class="tab-panel">
+                        <div class="review-form card">
+                            <div class="card__body">
+                                <h3>4-Weekly Review</h3>
+                                <p class="method-description">Review your food safety management system every 4 weeks.</p>
+                                
+                                <div class="form-group">
+                                    <label class="form-label">Review Date</label>
+                                    <input type="date" class="form-control" name="review_date">
+                                </div>
+                                
+                                <div class="review-questions">
+                                    <div class="form-group">
+                                        <label class="form-label">Are all safe methods being followed?</label>
+                                        <select class="form-control" name="safe_methods_followed">
+                                            <option value="">Select...</option>
+                                            <option value="yes">Yes</option>
+                                            <option value="no">No</option>
+                                            <option value="partially">Partially</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label class="form-label">Are daily checks being completed?</label>
+                                        <select class="form-control" name="daily_checks_completed">
+                                            <option value="">Select...</option>
+                                            <option value="yes">Yes</option>
+                                            <option value="no">No</option>
+                                            <option value="sometimes">Sometimes</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label class="form-label">Are temperature records up to date?</label>
+                                        <select class="form-control" name="temperature_records_current">
+                                            <option value="">Select...</option>
+                                            <option value="yes">Yes</option>
+                                            <option value="no">No</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label class="form-label">Have all staff received adequate training?</label>
+                                        <select class="form-control" name="staff_training_adequate">
+                                            <option value="">Select...</option>
+                                            <option value="yes">Yes</option>
+                                            <option value="no">No</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label class="form-label">What improvements need to be made?</label>
+                                        <textarea class="form-control" name="improvements_needed" rows="4" placeholder="Describe any improvements needed..."></textarea>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label class="form-label">Action plan for next 4 weeks</label>
+                                        <textarea class="form-control" name="action_plan" rows="4" placeholder="Describe your action plan..."></textarea>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label">Reviewer Name</label>
+                                    <input type="text" class="form-control" name="reviewer_name" placeholder="Enter reviewer's name">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label">Next Review Date</label>
+                                    <input type="date" class="form-control" name="next_review_date">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Notification Container -->
+        <div id="notificationContainer" class="notification-container"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
